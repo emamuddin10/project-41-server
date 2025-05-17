@@ -95,7 +95,7 @@ async function run() {
       res.send(result)
     })
 
-    //-------------start the work of wishlist---------//
+    //-------------start the work of wishlist---------
     app.post("/addWishlist", async (req, res) => {
       const blog = req.body;
       const query = { wishListId: blog?.wishListId };
