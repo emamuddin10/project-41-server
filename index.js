@@ -45,7 +45,8 @@ async function run() {
       const result = await blogCollection.find().toArray();
       res.send(result);
     });
-
+    
+    // get all feature blogs
     app.get("/allFeaturedBlogs", async (req, res) => {
       const blogs = await blogCollection.find().toArray();
 
