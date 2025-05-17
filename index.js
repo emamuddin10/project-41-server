@@ -61,7 +61,7 @@ async function run() {
       res.send(topBlogs);
     });
 
-    // blog details page
+    // blog details 
     app.get("/blogDetails/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
