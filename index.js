@@ -33,7 +33,7 @@ async function run() {
     const wishCollection = myDB.collection("wishCollection");
     const commentCollection = myDB.collection("commentCollection");
 
-    // add blog in db
+    // add blog in D
     app.post("/addBlog", async (req, res) => {
       const blog = req.body;
       const result = await blogCollection.insertOne(blog);
